@@ -1,0 +1,132 @@
+    .slide-servico {
+        background: var(--cor-10);
+
+    }
+
+    .slide-container {
+        background: var(--cor-10);
+        display: flex;
+        margin: 50px;
+    }
+
+    .first-card:first-child {
+        margin-left: 10%;
+    }
+
+    .card {
+        position: relative;
+        margin: 4% 7% 3% 0;
+        box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
+        background-color: white;
+        box-sizing: border-box;
+        width: 300px;
+        /* ajuste o tamanho do card conforme necessário */
+        overflow: hidden;
+        /* esconde o conteúdo que excede as dimensões do card */
+        cursor: pointer;
+    }
+
+    .card img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card h2 {
+        width: 150px;
+        /* margin: 20px; */
+    }
+
+    .card p,
+    .card h2 {
+        margin: 15px 25px;
+    }
+
+    @media (min-width:768px) and (max-width:1023px) {
+        .slide-servico {
+            background: var(--cor-10);
+
+        }
+
+        .slide-container {
+            display: grid;
+            padding: 5px;
+        }
+
+        .first-card:first-child {
+
+            margin-left: 7.5%;
+        }
+
+        .card img {
+            position: absolute;
+            width: 45%;
+            height: 100%;
+        }
+
+        .card {
+            position: relative;
+            margin: 3% auto;
+            width: 85%;
+            height: 230px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(240, 233, 233, 0.828);
+            background-color: white;
+            cursor: pointer;
+
+        }
+
+        .card h2 {
+            position: relative;
+            width: 105%;
+            left: 75px;
+            text-align: center;
+
+
+        }
+
+        .card p {
+            float: right;
+            overflow: hidden;
+            width: 45%;
+            height: 100%;
+            font-size: 1.2em;
+
+        }
+
+        .introducao img {
+            height: 300px;
+            width: 100%;
+            margin: 5px;
+        }
+    }
+
+    @media (max-width:767px) {
+        .slide-servico {
+            background: var(--cor-10);
+        }
+        
+        .slide-container{
+            display: block;
+            margin: 0 20% ;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+      
+        .first-card:first-child{
+            margin: 0;
+        }
+        .card{
+            display: block;
+            width: 100%;
+            
+        }
+        
+        .card h2{
+            width: 100%;
+        }
+        
+        .card p {
+            font-size: 1.33rem;
+        }
+
+    }

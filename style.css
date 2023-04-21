@@ -1,0 +1,28 @@
+@import "./css/global/menu.css";
+@import "./css/global/footer.css";
+@import "./css/global/global.css";
+
+
+/* Utilidades */
+
+@import "./css/utilidades/cores.css";
+@import "./css/utilidades/tipografia.css";
+@import "./css/utilidades/formulario.css";
+
+
+/* Pagina Inicial */
+@import "./css/PaginaInicial/introducao-sobre.css";
+@import "./css/PaginaInicial/introducao-servicos.css";
+
+/* Pagina Serviços */
+@import "./css/PaginaServicos/servicos.css";
+@import "./css/PaginaServicos/topicos-servicos.css";
+@import "./css/PaginaServicos/card-fiscalizacao.css";
+
+/* Pagina Quem Somos */
+@import "./css/PaginaQuemSomos/intro-qsomos.css";
+@import "./css/PaginaQuemSomos/card-valores.css";
+
+/* Pagina de Contato */
+@import "./css/PaginaContato/contato.css";
+@import "./css/PaginaContato/localizacao.css";

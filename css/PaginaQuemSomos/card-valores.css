@@ -1,0 +1,39 @@
+.container-qsomos{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    margin: 2% 10%  ;
+}
+
+.card-qsomos {
+    margin: 4% 7% 3% 0;
+    background-color: white;
+    box-sizing: border-box;
+    width: 400px; /* ajuste o tamanho do card conforme necessário */
+    overflow: hidden; /* esconde o conteúdo que excede as dimensões do card */
+
+}
+
+.card-qsomos img{
+    width: 100px;
+    margin-left: 30%    ;
+}
+
+.card-qsomos h2, .card-qsomos p{
+    margin: 3%;
+}
+
+@media (max-width:800px) {
+    .container-qsomos{
+        /* background: var(--cor-9 ); */
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+
+    .card-qsomos{
+        width: 420px;
+
+    }
+    .card-qsomos h2, .card-qsomos p{
+        margin: 3%;
+    }
+}
