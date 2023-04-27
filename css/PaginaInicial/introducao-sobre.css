@@ -1,68 +1,92 @@
-.introducao-bg{
+.introducao-bg {
     background: var(--cor-12);
-    padding: 4% 10%;
+    padding: 4% 7%;
 }
 
-.introducao{
+.introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 40px;
 }
 
-.introducao-sobre{
+.introducao-sobre {
     padding-top: 30px;
 }
 
-.introducao-sobre p{
+.introducao-sobre p {
     margin-top: 20px;
+    /* font-size: 1.9vh; */
 }
 
-.introducao img{
-    width: 100%;
-    height: 85%;
+.introducao img {
+    max-width: 100%;
+    max-height: 500px;
     object-fit: cover;
     border-radius: 4px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
-.introducao h1{
-    margin-bottom: 3px;   
-    margin-top: 45px;
+.introducao h1 {
+    margin-bottom: 3px;
+    /* margin-top: 45px; */
 }
 
-.introducao h2{
+.introducao h2 {
     margin-bottom: 15px;
 
 }
 
-.introducao span{
+.introducao span {
     margin-left: 7px;
     font-size: 1.3em;
 }
 
-@media (max-width:800px){
-    .introducao-bg{
+@media (max-width:767px) {
+    .introducao-bg {
         background: var(--cor-11);
         padding-top: 40px;
+        padding: 2% 5%;
+
     }
 
-    .introducao{
+    .introducao {
         grid-template-columns: 1fr;
         gap: 32px;
     }
-    
-    .introducao-sobre{
+
+    .introducao-sobre {
         padding-bottom: 0px;
     }
-    
-    .introducao h1{
+
+    .introducao h1 {
         margin-bottom: 10px;
         margin-top: 0;
     }
 
-    .introducao img{
+    .introducao img {
         height: 300px;
         width: 100%;
         margin: 5px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+
+    .introducao-bg {
+        background: var(--cor-11);
+        padding-top: 40px;
+        padding: 4% 5%;
+
+    }
+    .introducao {
+      
+    }
+    .introducao img {
+        width: 100%;
+       
+        object-fit: cover;
+        border-radius: 4px;
+        margin-top: 50px;
+
     }
 }

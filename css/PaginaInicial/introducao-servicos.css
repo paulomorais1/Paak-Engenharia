@@ -1,21 +1,25 @@
     .slide-servico {
         background: var(--cor-10);
-
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
     }
-
+    
     .slide-container {
         background: var(--cor-10);
         display: flex;
-        margin: 50px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5% auto;
     }
 
     .first-card:first-child {
-        margin-left: 10%;
+        /* margin-left: 10%; */
     }
 
     .card {
-        position: relative;
-        margin: 4% 7% 3% 0;
+        margin: 0 20px;
         box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
         background-color: white;
         box-sizing: border-box;
@@ -52,10 +56,10 @@
             padding: 5px;
         }
 
-        .first-card:first-child {
+        /* .first-card:first-child {
 
             margin-left: 7.5%;
-        }
+        } */
 
         .card img {
             position: absolute;
@@ -108,13 +112,16 @@
         .slide-container{
             display: block;
             margin: 0 20% ;
-            padding-top: 10%;
-            padding-bottom: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%;
         }
-      
-        .first-card:first-child{
+        
+        .slide-container .card{
+            margin-top: 10%;
+        }
+        /* .first-card:first-child{
             margin: 0;
-        }
+        } */
         .card{
             display: block;
             width: 100%;

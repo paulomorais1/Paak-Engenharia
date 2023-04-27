@@ -1,50 +1,44 @@
 .footer-bg {
     background-color: var(--cor-12);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: 3fr 5fr 4fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     margin-left: 5%;
 }
-
+ .footer-redes{
+    margin: 40px;    
+}
 .footer h3 {
     margin-bottom: 22px;
+    margin-left: 25px;
 }
-.footer-informacoes ul a{
-padding: 0;
 
+.footer-informacoes ul a {
+    padding: 0;
 }
+
 .footer-contato li a {
-padding: 0;
-    
+    padding: 0;
 }
 
 .footer-contato ul {
     margin-bottom: 12px;
-  
-    
 }
-.menu-footer{
+
+.menu-footer {
     text-align: start;
-    
 }
 
-.footer li {
-    list-style-type: none;
-}
 
-.footer-contato li:nth-child(even):after {
-    content: "";
-    display: block;
-    max-width: 360px;
-    height: 2px;
-    background: var(--cor-11);
-    margin-top: 20px;
-}
 
 .footer li {
     margin-bottom: 16px;
@@ -52,9 +46,8 @@ padding: 0;
 
 .footer-redes {
     display: flex;
+    align-items: center;
     gap: 32px;
-   
-
 }
 
 .footer a:hover {
@@ -63,8 +56,8 @@ padding: 0;
 }
 
 .footer-copy {
-    grid-column: 1/-1;
-    margin-top: 40px;
+    width: 100%;
+    text-align: center;
 
 }
 
@@ -72,37 +65,27 @@ padding: 0;
     display: block;
 }
 
-.menu-footer a {
-    color: #b2b2b2;
-    font-size: 1.1em;
-}
+
 
 .menu-footer a::after {
     color: #ffffff;
 }
 
-
-  
-@media (max-width:800px) {
-    .footer > img{
-        display: none;
-    }
-
-    .footer{
-        grid-template-columns: 1fr 1fr;
-
-    }
-    
-}
-
 @media (max-width:600px) {
     .footer{
-        grid-template-columns: 1fr;
-        gap: 20px;
+       display: block;
+       justify-content: left;
+        text-align: justify;
+        margin: 0;
+    }
+    .footer img{
+        margin-left: 5%;
+    }
+    .footer-contato{
+        margin-top: 30px;
     }
 
     .footer-copy{
-        margin-top: 0px;
+        margin-left: 5%;
     }
-    
 }

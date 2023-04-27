@@ -10,7 +10,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 130px;
+  height: 110px;
   background-color: black;
   padding-left: 10%;
 }
@@ -21,7 +21,7 @@ nav {
 }
 
 nav ul {
-  padding-right: 10%;
+  padding-right: 3%;
 }
 
 .menu {
@@ -29,7 +29,7 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   /* text-align: center; */
-  align-content: flex-start;
+  align-content: flex-end;
 }
 
 .menu li a:hover {
@@ -91,6 +91,12 @@ nav ul {
   display: none;
 }
 
+.btn-2:hovers{
+  
+  color: white;
+  transform: translateX(180deg);
+ 
+}
 
 @media (max-width: 768px) {
   .menu-btns {
@@ -112,8 +118,6 @@ nav ul {
     transition: transform 0.2s ease-in-out;
   }
 
-
-
   .menu {
     display: flex;
     flex-direction: column;
@@ -131,11 +135,12 @@ nav ul {
     padding: initial;
   }
 
+  
   /* Remove o hover do menu-hambuger */
-  .menu li:hover .menu-dropdown {
+  .menu li:hover  .menu-dropdown {
     display: none;
   }
-
+ 
 
   .menu-dropdown li:first-child {
     padding-top: 0;
@@ -149,9 +154,10 @@ nav ul {
   }
 
   .menu.show {
-    top: 130px;
+    top: 110px;
     height: 30vh;
     transform: translateY(0);
+    z-index: 1;
   }
 
   .close-menu.show .hamburger-menu {
@@ -172,5 +178,18 @@ nav ul {
 
   .menu .show .close-menu {
     display: block;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  nav{
+    padding-left: 5%;
+  }
+
+  nav ul {
+    padding-right: 3%;
+  }
+  li a{
+    padding: 0 15px;
   }
 }
