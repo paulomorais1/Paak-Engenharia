@@ -2,17 +2,15 @@
     background-color: var(--cor-12);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    margin-left: 5%;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2% 9% 1% 9%;
 }
  .footer-redes{
     margin: 40px;    
@@ -38,8 +36,6 @@
     text-align: start;
 }
 
-
-
 .footer li {
     margin-bottom: 16px;
 }
@@ -52,20 +48,16 @@
 
 .footer a:hover {
     color: var(--cor-0);
-
 }
 
 .footer-copy {
     width: 100%;
     text-align: center;
-
 }
 
 .menu-footer ul {
     display: block;
 }
-
-
 
 .menu-footer a::after {
     color: #ffffff;

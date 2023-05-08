@@ -16,7 +16,7 @@ blockquote {
 }
 
 ul {
-    /* padding: 0px; */
+
     list-style: none;
 }
 
@@ -47,4 +47,8 @@ img[src$=".jpg"] {
 .barra-valor {
     padding-right: 5px;
 }
+.menu-open {
+    margin-top: 155px;
+    background-color: #111111;
+  }
 

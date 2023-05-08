@@ -4,13 +4,13 @@
   
   .titulo-contato {
     margin: 4% 10%;
+    padding-top: 55px;
   }
   .contato {
     display: grid;
     grid-template-columns: 5fr 7fr;
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
-   
   }
   
   .contato-dados,
@@ -22,14 +22,13 @@
   .contato-dados {
     border-radius: 5px 0 0 5px;
     background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
-      bottom 20px left 20px;
+      bottom 15px left 15px;
   }
   
   .contato-formulario {
     border-radius: 0 5px 5px 0;
     background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat
-      bottom 20px right 20px;
-    
+      bottom 15px right 15px;
   }
   
   .contato-dados h2 {
@@ -47,7 +46,7 @@
     margin-bottom: 8px;
   }
   
-  .contato-meios a {
+  .contato-meios a, .contato-meios p {
     display: block;
     max-width: max-content;
     margin-bottom: 8px;
@@ -73,7 +72,8 @@
   
   .contato-redes {
     display: flex;
-    gap: 32px;
+    gap: 60px;
+    margin-top: 28px;
     padding-left: 28px;
   }
   
@@ -98,6 +98,9 @@
     }
     .contato-redes {
       margin-bottom: 12px;
+    }
+    .titulo-contato{
+      padding-top: 75px;
     }
   }
   

@@ -2,16 +2,16 @@
         background: var(--cor-10);
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        
     }
     
     .slide-container {
         background: var(--cor-10);
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 5% auto;
+        justify-content: space-around;
+        /* justify-content: space-around; */
+        margin: 4% 5%;
+        width: 100%;
     }
 
     .first-card:first-child {
@@ -19,7 +19,7 @@
     }
 
     .card {
-        margin: 0 20px;
+        /* margin: 20px 20px; */
         box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
         background-color: white;
         box-sizing: border-box;

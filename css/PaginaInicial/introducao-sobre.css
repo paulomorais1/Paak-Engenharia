@@ -1,16 +1,18 @@
 .introducao-bg {
     background: var(--cor-12);
     padding: 4% 7%;
+
 }
 
 .introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 40px;
+    
 }
 
 .introducao-sobre {
-    padding-top: 30px;
+    padding-top: 45px;
 }
 
 .introducao-sobre p {
@@ -55,7 +57,7 @@
     }
 
     .introducao-sobre {
-        padding-bottom: 0px;
+        padding-top: 65px;
     }
 
     .introducao h1 {
@@ -78,12 +80,12 @@
         padding: 4% 5%;
 
     }
-    .introducao {
-      
-    }
+
+    .introducao {}
+
     .introducao img {
         width: 100%;
-       
+
         object-fit: cover;
         border-radius: 4px;
         margin-top: 50px;
