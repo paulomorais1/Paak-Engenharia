@@ -1,5 +1,5 @@
 li a {
-  padding: 0 30px;
+  padding: 0 15px;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -19,7 +19,7 @@ nav {
 }
 
 nav ul {
-  padding-right: 10%;
+  padding-right: 4%;
 }
 
 .menu {

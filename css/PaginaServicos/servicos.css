@@ -1,12 +1,12 @@
 .servicos-bg {
     /* background: var(--cor-11); */
-    padding: 4% 10%;
+    padding: 4%;
 }
 
 .servicos {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 10% ;
+    margin: 0 7%;
 }
 
 /* .menu-servicos {
@@ -21,7 +21,8 @@
 
 
 .servicos-gestao p {
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 3.5vh;
 }
 
 .servicos img {
@@ -34,38 +35,44 @@
 .servicos h1 {
     margin-bottom: 3px;
     margin-top: 45px;
+    font-size: 6.6vh;
 }
 
 
 .servicos span {
-    margin-left: 7px;
+    /* margin-left: 7px; */
     font-size: 1.3em;
 }
 
 .topicos-servicos {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-left: 35%;
     margin-top: 0;
+    font-size: 2.4vh;
 }
 
-.campo-topicos{
+.campo-topicos {
     display: flex;
-    margin-top: 3%;   
+    margin-top: 3%;
 }
 
-.campo-topicos p{
+.campo-topicos p {
     margin-top: 20px;
 }
 
-.topicos-servicos img{
+.topicos-servicos img {
     width: 40px;
     height: 40px;
     padding-bottom: 15px;
 }
 
+.topicos-servicos p{
+    font-size: 2.6vh;
+}
 
-@media (max-width:800px) {
+
+@media (min-width:767px) and (max-width:1023px) {
     .servicos-bg {
         background: var(--cor-11);
         padding-top: 40px;
@@ -74,15 +81,22 @@
     .servicos {
         grid-template-columns: 1fr;
         gap: 32px;
+        margin: 0 5%;
     }
 
     .servicos-sobre {
         padding-bottom: 0px;
     }
 
+    .servicos-gestao p {
+        margin-top: 20px;
+        font-size: 3.1vh;
+    }
+
     .servicos h1 {
         margin-bottom: 10px;
         margin-top: 0;
+        font-size: 5vh;
     }
 
     .servicos img {
@@ -91,9 +105,12 @@
         margin: 5px;
     }
 
-    .topicos-servicos{
+    .topicos-servicos {
         grid-template-columns: 1fr;
         margin: 5%;
     }
- 
+
+    .topicos-servicos p{
+        font-size: 2.2vh;
+    }
 }
