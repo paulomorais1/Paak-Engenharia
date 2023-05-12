@@ -13,6 +13,7 @@
 /* Pagina Inicial */
 @import "./css/PaginaInicial/introducao-sobre.css";
 @import "./css/PaginaInicial/introducao-servicos.css";
+@import "./css/PaginaInicial/introducao-slide.css";
 
 /* Pagina Serviços */
 @import "./css/PaginaServicos/servicos.css";

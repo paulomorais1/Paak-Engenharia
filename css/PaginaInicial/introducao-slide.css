@@ -1,0 +1,362 @@
+.trs {
+    -webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -ms-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s;
+}
+
+#slider {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-clip: border-box;
+    max-width: 100%;
+    z-index: 1;
+    background-blend-mode: soft-light;
+}
+
+#slider {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide1,
+.slide2,
+.slide3 {
+    background-color: rgb(60, 59, 59);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-clip: border-box;
+    max-width: 100%;
+    z-index: 1;
+    background-blend-mode: multiply;
+}
+
+.slide1 {
+    background-image: url('../../img/slider1.jpg');
+}
+
+.slide2 {
+    background-image: url('../../img/slider2.jpg');
+}
+
+.slide3 {
+    background-image: url('../../img/slider3.jpg');
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+
+.conteudo-slide {
+    display: block;
+    flex-direction: column;
+    width: 75%;
+    height: 70%;
+    margin: 3% 9%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Modo cascata */
+
+.conteudo-slide h2,
+.conteudo-slide h1,
+.conteudo-slide p,
+.conteudo-slide .botao {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide.ativo .conteudo-slide {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide.ativo .conteudo-slide h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.slide.ativo .conteudo-slide h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.slide.ativo .conteudo-slide p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+.slide.ativo .conteudo-slide .botao {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+/* fim do modo cascata */
+
+.conteudo-slide h2 {
+    font-size: 4vh;
+}
+
+.conteudo-slide h1 {
+    font-size: 7vh;
+}
+
+.conteudo-slide p {
+    font-size: 3vh;
+}
+
+.conteudo-slide h1,
+.conteudo-slide h2 {
+    padding-top: 10px;
+}
+
+.conteudo-slide p,
+.botao {
+    padding-top: 35px;
+    width: 60%;
+}
+
+.conteudo-slide .botao {
+    position: absolute;
+    background-color: #ffe601;
+    color: #fff;
+    width: 90px;
+    font-size: 3.3vh;
+    padding: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 0 auto;
+}
+
+.ativo {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#layout button {
+    position: absolute;
+    bottom: 45%;
+    width: 43px;
+    height: 45px;
+    background: #ecdc04;
+    color: #0a0a0a;
+    cursor: pointer;
+    opacity: 85%;
+    visibility: visible;
+    display: block;
+    z-index: 5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.814);
+    padding: 15px;
+}
+
+#layout .next:hover {
+    color: #0a0a0a;
+
+}
+
+#layout button.prev {
+    left: 10px;
+    border-radius: 50% 0 0 50%;
+}
+
+#layout button.next {
+    right: 10px;
+    border-radius: 0 50% 50% 0;
+}
+
+.next {
+    right: 2%;
+}
+
+.next:before,
+.next:after {
+    left: 21px;
+}
+
+.next:before {
+    top: 5px;
+    -webkit-transform: rotate(-42deg);
+    transform: rotate(-42deg);
+}
+
+.next:after {
+    top: 19px;
+    -webkit-transform: rotate(-132deg);
+    transform: rotate(-132deg);
+}
+
+.next:before,
+.next:after,
+.prev:before,
+.prev:after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 20px;
+    background: #fff;
+}
+
+.prev {
+    left: 2%;
+    margin-bottom: 10px;
+}
+
+.prev:before,
+.prev:after {
+    left: 18px;
+}
+
+.prev:before {
+    top: 5px;
+    -webkit-transform: rotate(42deg);
+    transform: rotate(42deg);
+}
+
+.prev:after {
+    top: 19px;
+    -webkit-transform: rotate(132deg);
+    transform: rotate(132deg);
+}
+
+#layout:hover .trs {
+    opacity: 0.76;
+    filter: alpha(opacity=76);
+}
+
+#layout {
+    margin: 0;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+#layout:hover .prev,
+#layout:hover .next {
+    opacity: 1;
+}
+
+#layout:not(:hover) .prev,
+#layout:not(:hover) .next {
+    opacity: 0;
+}
+/* 
+@media (min-width: 1024px) {
+    #layout {
+        max-height: 500px;
+    }
+
+    .conteudo-slide p {
+        width: 65%;
+
+    }
+
+} */
+
+/* Responsividade para iPad */
+@media (min-width: 768px) and (max-width:1024px) {
+    #layout {
+        max-height: 380px;
+    }
+
+    .conteudo-slide h2 {
+        font-size: 3.5vh;
+    }
+
+    .conteudo-slide p {
+        width: 65%;
+    }
+
+    .conteudo-slide h1 {
+        font-size: 5.5vh;
+    }
+
+    .conteudo-slide p {
+        font-size: 2.5vh;
+    }
+
+    .conteudo-slide h1,
+    .conteudo-slide h2 {
+        padding-top: 10px;
+    }
+    .conteudo-slide .botao {
+        width: 80px;
+        font-size: 3.3vh;
+        padding: 14px;
+        line-height: 15px;
+        margin-top: 25px;
+        padding: 0 auto;
+    }
+
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 767px) and (min-width:480px) {
+    #layout {
+        max-height: 340px;
+    }
+
+    .conteudo-slide h2 {
+        font-size: 2.5vh;
+    }
+
+    .conteudo-slide  {
+        width: 75%;
+    }
+
+    .conteudo-slide h1 {
+        font-size: 5vh;
+    }
+
+    .conteudo-slide p {
+        font-size: 2.2vh;
+    }
+
+    .conteudo-slide h1,
+    .conteudo-slide h2 {
+        padding-top: 5px;
+    }
+
+    .conteudo-slide .botao {
+        width: 70px;
+        font-size: 3vh;
+        padding: 10px;
+        line-height: 15px;
+        margin-top: 15px;
+        padding: 0 auto;
+    }
+
+}

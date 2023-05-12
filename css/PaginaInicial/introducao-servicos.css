@@ -11,132 +11,128 @@
     background-clip: border-box;
     max-width: 100%;
     z-index: 1;
-    background-blend-mode: difference;
-  }
-  
+    background-blend-mode: soft-light;
+}
 
-    
-    .slide-container {
+.slide-container {
+    /* background: var(--cor-10); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4% 5%;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
+    background-color: white;
+    box-sizing: border-box;
+    width: 400px;
+    /* ajuste o tamanho do card conforme necessário */
+    overflow: hidden;
+    /* esconde o conteúdo que excede as dimensões do card */
+    cursor: pointer;
+}
+
+.card img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    font-size: 3.9vh;
+}
+
+.card p,
+.card h2 {
+    margin: 15px 25px;
+
+}
+
+.card p {
+    font-size: 2.5vh;
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .slide-servico {
         /* background: var(--cor-10); */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 4% 5%;
-        width: 100%;
     }
 
-
-
-    .card {
-        box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
-        background-color: white;
-        box-sizing: border-box;
-        width: 400px;
-        /* ajuste o tamanho do card conforme necessário */
-        overflow: hidden;
-        /* esconde o conteúdo que excede as dimensões do card */
-        cursor: pointer;
+    .slide-container {
+        display: grid;
+        padding: 5px;
     }
 
     .card img {
+        position: absolute;
+        width: 45%;
+        height: 100%;
+
+    }
+
+    .card {
         position: relative;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .card h2 {
-        width: 100%;
+        margin: 3% auto;
+        width: 80%;
+        height: 230px;
         overflow: hidden;
-        object-fit: cover;
-        font-size: 3.9vh;
+        box-shadow: 0 4px 6px rgba(240, 233, 233, 0.828);
+        background-color: white;
+        cursor: pointer;
     }
 
-    .card p,
     .card h2 {
-        margin: 15px 25px;
-      
+        position: relative;
+        left: 260px;
+        font-size: 3.4;
     }
 
     .card p {
-        font-size: 2.5vh;
+        float: right;
+        overflow: hidden;
+        width: 45%;
+        /* height: 100%; */
+        font-size: 3vh;
     }
 
-    @media (min-width:768px) and (max-width:1023px) {
-        .slide-servico {
-            /* background: var(--cor-10); */
-        }
+    .introducao img {
+        height: 300px;
+        width: 100%;
+        margin: 5px;
+    }
+}
 
-        .slide-container {
-            display: grid;
-            padding: 5px;
-        }
-
-        .card img {
-            position: absolute;
-            width: 45%;
-            height: 100%;
-             
-        }
-
-        .card {
-            position: relative;
-            margin: 3% auto;
-            width: 80%;
-            height: 230px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(240, 233, 233, 0.828);
-            background-color: white;
-            cursor: pointer;
-        }
-
-        .card h2 {
-            position: relative;
-            left: 260px;
-            font-size: 3.4;
-        }
-
-        .card p {
-            float: right;
-            overflow: hidden;
-            width: 45%;
-            /* height: 100%; */
-            font-size: 3vh;
-        }
-
-        .introducao img {
-            height: 300px;
-            width: 100%;
-            margin: 5px;
-        }
+@media (max-width:767px) {
+    .slide-servico {
+        /* background: var(--cor-10); */
     }
 
-    @media (max-width:767px) {
-        .slide-servico {
-            /* background: var(--cor-10); */
-        }
-
-        .slide-container {
-            display: block;
-            margin: 0 20%;
-            padding-top: 5%;
-            padding-bottom: 5%;
-        }
-
-        .slide-container .card {
-            margin-top: 10%;
-        }
-
-        .card {
-            display: block;
-            width: 100%;
-        }
-
-        .card h2 {
-            width: 100%;
-        }
-
-        .card p {
-            font-size: 3vh;
-        }
-
+    .slide-container {
+        display: block;
+        margin: 0 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
+
+    .slide-container .card {
+        margin-top: 10%;
+    }
+
+    .card {
+        display: block;
+        width: 100%;
+    }
+
+    .card h2 {
+        width: 100%;
+    }
+
+    .card p {
+        font-size: 3vh;
+    }
+
+}
