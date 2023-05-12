@@ -90,7 +90,7 @@ nav ul {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width:481px) {
   .menu-btns {
     position: absolute;
     right: 0;
@@ -161,11 +161,12 @@ nav ul {
   .menu-h.show {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    /* justify-content: end; */
+    margin-top: 10px;
   }
 
   .menu-h.show ul {
-    padding-top: 5px;
+    padding-top: 10px;
     justify-content: start;
     font-size: 0.9em;
   }

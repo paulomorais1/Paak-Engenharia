@@ -129,10 +129,11 @@
 
     .card h2 {
         width: 100%;
+        font-size: 3.4vh;
     }
 
     .card p {
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
 }

@@ -2,6 +2,7 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const closeMenu = document.querySelector('.close-menu i');
 const menu = document.querySelector('.menu-h');
 const mainSection = document.querySelector('main');
+// const menuSlide = document.getElementById('menuSlide').style.paddingTop = "50px";
 const body = document.querySelector('body');
 
 hamburgerMenu.addEventListener('click', function() {
@@ -53,7 +54,7 @@ const submenu = document.querySelector('.menu-dropdown');
 
 // adiciona um evento de clique ao item do menu
 menuItem.addEventListener('click', () => {
-  // alterna a classe "show" no submenu
+  // alterna a classe 'show' no submenu
   submenu.classList.toggle('show');
 });
 

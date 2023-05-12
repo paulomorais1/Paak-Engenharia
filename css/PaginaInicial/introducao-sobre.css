@@ -60,7 +60,11 @@ span.barra-sub-titulo {
 
     .introducao-sobre {
         padding-top: 65px;
-        font-size: 2.6vh;
+    }
+    
+    .introducao-sobre p{
+        font-size: 2.2vh;
+
     }
 
     .introducao h1 {
@@ -80,8 +84,7 @@ span.barra-sub-titulo {
     .introducao-bg {
         background: var(--cor-11);
         padding-top: 40px;
-        padding: 4% 5%;
-
+        padding: 4% 5%;   
     }
 
     .introducao-sobre p {
