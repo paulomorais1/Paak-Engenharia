@@ -34,6 +34,19 @@
     background: var(--cor-0);
     box-shadow: 0 0 0 2px #fea;
   }
+
+  #botao-form{
+    
+    color: var(--cor-12);
+    height: 35px;
+    width: 70%;
+    margin: 0 auto;
+    color: black;
+    background-color: var(--cor-p1);
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 0.9rem;
+  }
   
   @media (max-width: 600px) {
     .form {

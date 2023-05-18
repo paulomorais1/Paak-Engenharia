@@ -15,7 +15,6 @@
 }
 
 .slide-container {
-    /* background: var(--cor-10); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -59,7 +58,6 @@
 
 @media (min-width:768px) and (max-width:1023px) {
     .slide-servico {
-        /* background: var(--cor-10); */
     }
 
     .slide-container {
@@ -108,7 +106,6 @@
 
 @media (max-width:767px) {
     .slide-servico {
-        /* background: var(--cor-10); */
     }
 
     .slide-container {
