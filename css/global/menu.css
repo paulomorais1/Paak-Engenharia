@@ -90,6 +90,10 @@ nav ul {
   display: none;
 }
 
+.menu-btns {
+  display: none;
+}
+
 @media (max-width:481px) {
   .menu-btns {
     position: absolute;

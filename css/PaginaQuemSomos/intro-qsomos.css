@@ -1,6 +1,6 @@
 .quemsomos-bg{
-    background: var(--cor-9);
-    padding: 4% 10%;
+    background: var(--cor-12);
+    padding: 4% 7%;
 }
 
 .quemsomos{
@@ -11,6 +11,7 @@
 
 .quemsomos-conteudo{
     padding-top: 50px;
+    text-align: justify;
 }
 
 .quemsomos-conteudo p{
@@ -34,7 +35,7 @@
     margin-bottom: 15px;
 }
 
-@media (max-width:800px){
+@media (max-width:955px){
     .quemsomos-bg{
         background: var(--cor-11);
         padding-top: 40px;

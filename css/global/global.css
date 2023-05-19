@@ -45,7 +45,7 @@ img[src$=".jpg"] {
 }
 
 .barra-valor {
-    padding-right: 5px;
+    margin-left: 10px;
 }
 .menu-open {
     margin-top: 170px;
