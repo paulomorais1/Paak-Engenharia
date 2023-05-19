@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 3% 7% 7% 7%;
-    grid-gap: 20px; /* Espaçamento igual entre os cards */
+    grid-gap: 50px; /* Espaçamento igual entre os cards */
+    max-width: 90%;
+    width: 1200px;
+    margin: 5% auto;
 }
 
 .card-qsomos {
@@ -26,7 +29,10 @@
     .container-qsomos {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 5%;
+        
     }
+
 
   
 }
