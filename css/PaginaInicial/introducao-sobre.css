@@ -24,7 +24,7 @@
     max-height: 500px;
     object-fit: cover;
     border-radius: 4px;
-    /* margin-top: 50px; */
+    margin-top: 70px;
 }
 
 .introducao h1 {
@@ -62,21 +62,12 @@ span.barra-sub-titulo {
         padding-top: 65px;
     }
     
-    .introducao-sobre p{
-        font-size: 2.2vh;
-
-    }
-
     .introducao h1 {
         margin-bottom: 15px;
         margin-top: 0;
     }
 
-    .introducao img {
-        height: 300px;
-        width: 100%;
-        margin: 5px;
-    }
+   
 }
 
 @media (min-width:768px) and (max-width:1023px) {
@@ -85,6 +76,7 @@ span.barra-sub-titulo {
         background: var(--cor-11);
         padding-top: 40px;
         padding: 4% 5%;   
+        text-align: justify;
     }
 
     .introducao-sobre p {
@@ -93,9 +85,15 @@ span.barra-sub-titulo {
 
     .introducao img {
         width: 100%;
+
         object-fit: cover;
         border-radius: 4px;
-        margin-top: 50px;
+        margin-top: 70px;
 
+    }
+    .introducao-sobreUltimo p:last-child{
+        width: 100%;
+        margin-top: 1%;
+   
     }
 }

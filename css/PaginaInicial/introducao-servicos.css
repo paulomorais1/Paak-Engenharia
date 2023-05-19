@@ -97,11 +97,7 @@
         font-size: 3vh;
     }
 
-    .introducao img {
-        height: 300px;
-        width: 100%;
-        margin: 5px;
-    }
+    
 }
 
 @media (max-width:767px) {

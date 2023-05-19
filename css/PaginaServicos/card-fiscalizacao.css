@@ -1,9 +1,10 @@
 .container-fisca-obras {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    justify-content: flex-start;
     max-width: 100%;
-    margin: 0 10px;
+   
+    gap: 3%;
 }
 
 .card-obras {
@@ -83,14 +84,14 @@
     .container-fisca-obras {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 2%;
+        justify-content: center;
+        margin: 3% auto;
     }
 
     .card-obras li {
         font-size: 2.9vh;
         padding-top: 7px;
     }
-
 
     #valor-card-ultimo {}
 
@@ -100,11 +101,13 @@
     .container-fisca-obras {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        gap: 4%;
+        margin-left: 3%;
     }
     
     .card-obras {
-        margin: 4% 2%;
+        margin: 3% 1% ;
         box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
         background-color: white;
         box-sizing: border-box;
