@@ -6,12 +6,13 @@
 .introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 40px;
+    gap: 0 15px;
 }
 
-.introducao-sobre p {
+.introducao-sobre p{
     margin-top: 20px;
     font-size: 3vh;
+    text-align: justify;
 }
 
 .introducao-sobre {
@@ -24,7 +25,7 @@
     max-height: 500px;
     object-fit: cover;
     border-radius: 4px;
-    margin-top: 70px;
+    margin-top: 110px;
 }
 
 .introducao h1 {
@@ -33,7 +34,6 @@
 
 .introducao h2 {
     margin-bottom: 15px;
-
 }
 
 .introducao span {
@@ -45,55 +45,32 @@ span.barra-sub-titulo {
     margin-left: 7px;
 }
 
-@media (max-width:767px) {
+@media (max-width:960px) {
     .introducao-bg {
         background: var(--cor-11);
         padding-top: 40px;
         padding: 2% 5%;
-
     }
 
     .introducao {
         grid-template-columns: 1fr;
-        gap: 32px;
+        /* gap: 32px; */
     }
 
+    .introducao-sobre img{
+        align-items: center;
+        justify-content: center;
+    }
     .introducao-sobre {
-        padding-top: 65px;
+        padding-top: 15px;
     }
     
     .introducao h1 {
         margin-bottom: 15px;
         margin-top: 0;
     }
-
-   
-}
-
-@media (min-width:768px) and (max-width:1023px) {
-
-    .introducao-bg {
-        background: var(--cor-11);
-        padding-top: 40px;
-        padding: 4% 5%;   
-        text-align: justify;
-    }
-
-    .introducao-sobre p {
-        font-size: 2.8vh;
-    }
-
     .introducao img {
-        width: 100%;
-
-        object-fit: cover;
-        border-radius: 4px;
-        margin-top: 70px;
-
-    }
-    .introducao-sobreUltimo p:last-child{
-        width: 100%;
-        margin-top: 1%;
-   
+    
+        margin-top:10px;
     }
 }

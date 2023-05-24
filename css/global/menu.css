@@ -91,10 +91,10 @@ nav ul {
 }
 
 .menu-btns {
-  display: none;
+  /* display: none; */
 }
 
-@media (max-width:481px) {
+@media (max-width:900px) {
   .menu-btns {
     position: absolute;
     right: 0;

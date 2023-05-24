@@ -58,7 +58,52 @@
     font: 600 4rem/1.125 "Poppins", sans-serif;
 }
 
-@media (max-width:800px) {
+.font-slider-A{
+    font: 600 2.95rem/1.325 "Poppins", sans-serif;
+}
+
+.font-slider-B{
+    font: 600 1.55rem/1.325 "Poppins", sans-serif;
+    
+
+}
+@media (min-width: 960px) and (max-width:1024px) {
+    .font-slider-A{
+        font: 600 2.78rem/1.325 "Poppins", sans-serif;
+    }
+    
+    .font-slider-B{
+        font: 600 1.39rem/1.325 "Poppins", sans-serif;
+        
+    
+    }
+}
+
+@media (max-width:959px) and (min-width:768px){
+    .font-slider-A{
+        font: 600 2.6rem/1.325 "Poppins", sans-serif;
+    }
+    
+    .font-slider-B{
+        font: 600 1.35rem/1.325 "Poppins", sans-serif;
+        
+    
+    }
+
+}
+
+@media (max-width: 767px) and (min-width:650px) {
+
+    .font-slider-A{
+        font: 600 2.2rem/1.325 "Poppins", sans-serif;
+    }
+    
+    .font-slider-B{
+        font: 600 1.25rem/1.325 "Poppins", sans-serif;
+        
+    
+    }
+
     .font-1-xx1 {
         font-size: 2rem;
     }
@@ -66,5 +111,45 @@
     .font-1-x1,
     .font-2-x1 {
         font-size: 1.5rem;
+    }
+}
+@media (max-width:649px) and (min-width:521px) {
+
+    .font-slider-A{
+        font: 600 1.7rem/1.325 "Poppins", sans-serif;
+    }
+    
+    .font-slider-B{
+        font: 600 1.15rem/1.325 "Poppins", sans-serif;
+        
+    
+    }
+
+
+}
+
+@media (max-width:520px) and (min-width:460px) {
+
+    .font-slider-A{
+        font: 600 1.25rem/1.325 "Poppins", sans-serif;
+    }
+    
+    .font-slider-B{
+        font: 600 1.07rem/1.325 "Poppins", sans-serif;
+        
+    
+    }
+
+
+}
+@media (max-width:459px) and (min-width:400px) {
+    .font-slider-A{
+        font: 600 1.15rem/1.325 "Poppins", sans-serif;
+    }
+    
+    .font-slider-B{
+        font: 600 0.97rem/1.325 "Poppins", sans-serif;
+        
+    
     }
 }
