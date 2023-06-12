@@ -2,23 +2,22 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 3% 7% 7% 7%;
-    grid-gap: 50px; /* Espaçamento igual entre os cards */
+    grid-gap: 50px; 
     max-width: 90%;
     width: 1200px;
     margin: 5% auto;
 }
 
 .card-qsomos {
-    background-color: white;
+    background-color: rgb(218, 215, 215);
     box-sizing: border-box;
-    overflow: hidden; /* esconde o conteúdo que excede as dimensões do card */
-    text-align: justify;
-    align-items: left;
+    overflow: hidden; 
 }
 
 .card-qsomos img {
     width: 100px;
-    margin-left: 30%;
+    margin-left: 40%;
+    align-items: center;
 }
 
 .card-qsomos h2, .card-qsomos p {
@@ -30,9 +29,5 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         margin: 5%;
-        
     }
-
-
-  
 }

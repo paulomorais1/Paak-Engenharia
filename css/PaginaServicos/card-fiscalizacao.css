@@ -10,12 +10,46 @@
     box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
     background-color: white;
     box-sizing: border-box;
-    width: 100%;
-    max-width: 310px; 
+    max-width: 290px;
     height: auto;
     overflow: hidden;
     cursor: pointer;
-    margin: 3% 0 5% 0;
+    margin: 0 0 5% 0;
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+}
+
+.hover-button {
+    opacity: 0;
+    margin-top: -25px;
+    transform: translateY(100%);
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 2px;
+}
+
+.btn-hover {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.btn-hover:hover {
+    background-color: #ffbb00;
+    color: #000;
+
+}
+
+.btn-hover:active {
+    transform: translateY(2px);
+}
+
+.card-obras:hover .hover-button {
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 .titulo-card {
@@ -25,9 +59,7 @@
     width: 60%;
 }
 
-.titulo-card>span,
-#card-micro>span,
-#card-pequeno>span {
+.titulo-card>span {
     padding-left: 15px;
 }
 
@@ -41,37 +73,12 @@
 
 .list-card-obras {
     list-style-type: disc;
-    margin: 5% 0 0 0%;
-    width: 120%;
+    margin: 5% 0 0 0;
+    width: 140%;
 }
 
 .list-card-obras li {
     padding-top: 4px;
-}
-
-#card-micro {
-    margin-top: 15px;
-
-}
-
-#card-pequeno{
-    margin-top: 30px;
-}
-
-#card-micro p,
-#card-pequeno p {
-    padding-left: 25px;
-    width: 150%;
-}
-
-.valor-card-ultimo {
-    padding: 10px 0 0 15px;
-    width: 150%;
-
-}
-
-.valor-card-ultimo p span span {
-    font-size: 0.2rem;
 }
 
 .card-obras li {
@@ -85,24 +92,17 @@
 @media (max-width: 767px) {
 
     .container-fisca-obras {
-      flex-direction: column;
-      align-items: center;
-      
-      
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     .card-obras li {
-        /* font-size: 2.9vh; */
         padding-top: 7px;
     }
 
-    .card-obras{
-        max-width: 340px; 
-    /* width: 100%; */
-
-
+    .card-obras {
+        max-width: 290px;
     }
-    #valor-card-ultimo {}
 
 }
 
@@ -110,27 +110,21 @@
     .container-fisca-obras {
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
         gap: 4%;
-        /* margin-left: 3%; */
     }
-    
+
     .card-obras {
-        margin: 3% 1% ;
+        margin: 3% 1%;
         box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
         background-color: white;
         box-sizing: border-box;
         width: 100%;
-        max-width: 340px; 
         height: auto;
         overflow: hidden;
         cursor: pointer;
-    }   
+    }
 
     .card-obras li {
         font-size: 2.5vh;
     }
-
-    #valor-card-ultimo {}
-
 }

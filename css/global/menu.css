@@ -1,17 +1,11 @@
-li a {
-  padding: 0 15px;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 130px;
   background-color: black;
-  padding-left: 10%;
+  padding-left: 5%;
+  z-index: 10;
 }
 
 .logo {
@@ -27,17 +21,17 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   align-content: flex-start;
+  z-index: 10;
 }
 
 .menu li a:hover {
-  color: rgb(236, 25, 25);
+  color: #e4a30b;
 }
 
 .menu li {
   position: relative;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .menu-dropdown {
   display: none;
   position: absolute;
@@ -58,19 +52,19 @@ nav ul {
   padding: 3px;
 }
 
-/* Links inside the dropdown */
+
 .menu-dropdown a {
   display: block;
+
 }
 
-/* Show the dropdown menu on hover */
 .menu li:hover .menu-dropdown {
   display: block;
   background-color: black;
 }
 
 .hamburger-menu {
-  display: none;
+  display: block;
   margin-right: 10px;
 }
 
@@ -89,9 +83,8 @@ nav ul {
 .menu-h {
   display: none;
 }
-
-.menu-btns {
-  /* display: none; */
+.menu-btns{
+  display: none;
 }
 
 @media (max-width:900px) {
@@ -100,6 +93,7 @@ nav ul {
     right: 0;
     top: 0;
     padding: 45px 13%;
+    display: block;
   }
 
   .menu {
@@ -137,20 +131,40 @@ nav ul {
   }
 
   .menu-h li {
-    padding: 1%;
+    padding: 6px;
     text-transform: capitalize;
   }
 
   .menu-h li a {
-    font-size: 1.1em;
-    padding-top: 2px;
+    padding-top: 10px;
+    position: relative;
+    overflow: hidden;
   }
-
+  
+  .menu-h li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px; 
+    background-color: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .menu-h li a:hover::before {
+    width: 100%; 
+    background-color: #e4a30b; 
+  }
+  
   .menu-h.show {
     top: 110px;
-    height: 35vh;
+    height: 34vh;
     background-color: black;
-    padding-bottom: 10px;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
   }
 
   .close-menu.show .hamburger-menu {
@@ -161,18 +175,10 @@ nav ul {
     display: block;
     cursor: pointer;
   }
-
-  .menu-h.show {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: end; */
-    margin-top: 10px;
-  }
-
+  
   .menu-h.show ul {
-    padding-top: 10px;
     justify-content: start;
-    font-size: 0.9em;
+    font-size: 0.82em;
   }
 
   .menu .show .close-menu {

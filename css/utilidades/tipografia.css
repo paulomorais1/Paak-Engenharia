@@ -59,21 +59,21 @@
 }
 
 .font-slider-A{
-    font: 600 2.95rem/1.325 "Poppins", sans-serif;
+    font: 600 2.65rem/1.325 "Poppins", sans-serif;
 }
 
 .font-slider-B{
-    font: 600 1.55rem/1.325 "Poppins", sans-serif;
+    font: 600 1.45rem/1.325 "Poppins", sans-serif;
     
 
 }
 @media (min-width: 960px) and (max-width:1024px) {
     .font-slider-A{
-        font: 600 2.78rem/1.325 "Poppins", sans-serif;
+        font: 600 2.58rem/1.325 "Poppins", sans-serif;
     }
     
     .font-slider-B{
-        font: 600 1.39rem/1.325 "Poppins", sans-serif;
+        font: 600 1.31rem/1.325 "Poppins", sans-serif;
         
     
     }
@@ -81,11 +81,11 @@
 
 @media (max-width:959px) and (min-width:768px){
     .font-slider-A{
-        font: 600 2.6rem/1.325 "Poppins", sans-serif;
+        font: 600 2.35rem/1.325 "Poppins", sans-serif;
     }
     
     .font-slider-B{
-        font: 600 1.35rem/1.325 "Poppins", sans-serif;
+        font: 600 1.25rem/1.325 "Poppins", sans-serif;
         
     
     }
@@ -99,7 +99,7 @@
     }
     
     .font-slider-B{
-        font: 600 1.25rem/1.325 "Poppins", sans-serif;
+        font: 600 1.15rem/1.325 "Poppins", sans-serif;
         
     
     }
@@ -136,20 +136,14 @@
     
     .font-slider-B{
         font: 600 1.07rem/1.325 "Poppins", sans-serif;
-        
-    
     }
-
-
 }
 @media (max-width:459px) and (min-width:400px) {
     .font-slider-A{
-        font: 600 1.15rem/1.325 "Poppins", sans-serif;
+        font: 600 1.24rem/1.35 "Poppins", sans-serif;
     }
     
     .font-slider-B{
-        font: 600 0.97rem/1.325 "Poppins", sans-serif;
-        
-    
+        font: 600 0.77rem/0.98 "Poppins", sans-serif;    
     }
 }

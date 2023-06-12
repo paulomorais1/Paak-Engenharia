@@ -12,6 +12,8 @@
     max-width: 100%;
     z-index: 1;
     background-blend-mode: soft-light;
+    clear: both;
+    padding-bottom:  20px;
 }
 
 .slide-container {
@@ -26,33 +28,63 @@
     box-shadow: 0 4px 6px rgba(185, 179, 179, 0.828);
     background-color: white;
     box-sizing: border-box;
-    width: 400px;
-    /* ajuste o tamanho do card conforme necessário */
+    width: 300px;
     overflow: hidden;
-    /* esconde o conteúdo que excede as dimensões do card */
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: perspective(800px) rotateY(10deg) scale(1.1);
+    box-shadow: 0 8px 12px rgba(185, 179, 179, 0.828);
+}
+
+.card:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover::after,
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .card img {
     position: relative;
     width: 100%;
     object-fit: cover;
+    height: 300px;
 }
 
 .card h2 {
     width: 100%;
     overflow: hidden;
     object-fit: cover;
-    font-size: 3.9vh;
 }
 
 .card p,
 .card h2 {
-    margin: 15px 25px;
-}
-
-.card p {
-    font-size: 2.5vh;
+    padding: 15px;
 }
 
 @media (min-width:768px) and (max-width:1023px) {
@@ -76,7 +108,7 @@
         overflow: hidden;
         box-shadow: 0 4px 6px rgba(240, 233, 233, 0.828);
         background-color: white;
-        cursor: pointer;     
+        cursor: pointer;
     }
 
     .cont-card {
@@ -84,25 +116,12 @@
         justify-content: center;
         width: 55%;
         clear: both;
-        padding: 25px 5px;
+        padding: 15px 5px;
     }
-    .cont-card p{
+
+    .cont-card p {
         padding-top: 10px;
-        font-size: 3.5vh;
     }
-    /* .card h2 {
-        position: relative;
-        left: 260px;
-        font-size: 3.4;
-    }
-
-    .card p {
-        float: right;
-        overflow: hidden;
-        width: 45%;
-        /* height: 100%;     }*/
-
-    
 }
 
 @media (max-width:767px) {
@@ -110,12 +129,12 @@
     .slide-container {
         display: block;
         margin: 0 20%;
-        padding-top: 5%;
+        padding-top: 1%;
         padding-bottom: 5%;
     }
 
     .slide-container .card {
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .card {
@@ -125,11 +144,6 @@
 
     .card h2 {
         width: 100%;
-        /* font-size: 3.4vh; */
-    }
-
-    .card p {
-        font-size: 3vh;
     }
 
 }

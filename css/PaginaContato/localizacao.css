@@ -21,7 +21,6 @@ iframe{
 }
 
 #local-mapa {
-  /* width: 1100px; */
   height: 370px;
   border: 0;
 }
@@ -41,7 +40,6 @@ iframe{
   .local-item{
     width: 85%;
   }
- 
 }
 
 @media (max-width: 767px) {

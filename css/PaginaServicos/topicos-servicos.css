@@ -5,9 +5,7 @@
     max-width: 100%;
     gap: 20px;
     margin: 3% 2% 5% 14%;
-
 }
-
 
 .topicos-servicos img {
     width: 45px;
@@ -26,7 +24,6 @@
     display: flex;
     align-items: center;
     margin-left: 5px;
- 
 }
 
 
@@ -35,14 +32,9 @@
     .topicos-servicos {
         grid-template-columns: 2fr 2fr;
         margin: 3% 2% 5% 4%;
-
     }
 
-    .campo-topicos{
-
-    }
-    .campo-topicos .campo-topicosUltimo:last-child{
-      
+    .campo-topicos .campo-topicosUltimo:last-child {
         line-height: 16px;
     }
 }
