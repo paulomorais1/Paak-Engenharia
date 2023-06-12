@@ -564,7 +564,7 @@
     .conteudo-slide p {
         font-size: 1.3vh;
         padding-top: 5px;
-        width: 80%;
+        width: 70%;
     }
 
     .conteudo-slide2 h1,
@@ -590,12 +590,12 @@
     }
 
     .conteudo-slide {
-        margin: 5% 16%;
+        margin: 10% 16%;
     }
 
     .conteudo-slide2,
     .conteudo-slide3 {
-        margin: 10% 0;
+        margin: 14% 0;
     }
 
     .conteudo-slide h1 {
@@ -608,7 +608,7 @@
 
     .conteudo-slide p {
         margin: 0;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         width: 80%;
         padding-top: 5px;
     }
@@ -641,7 +641,7 @@
 
     .conteudo-slide2,
     .conteudo-slide3 {
-        margin: 10% 0;
+        margin: 15% 0;
     }
 
     .conteudo-slide h1 {
@@ -654,7 +654,7 @@
 
     .conteudo-slide p {
         margin: 0;
-        font-size: 0.7rem;
+        font-size: 0.78rem;
         width: 80%;
         padding-top: 5px;
     }
