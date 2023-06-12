@@ -629,3 +629,49 @@
     }
 
 }
+
+@media (max-width:399px) and (min-width:320px) {
+    #layout {
+        height: 35vh;
+    }
+
+    .conteudo-slide {
+        margin: 5% 16%;
+    }
+
+    .conteudo-slide2,
+    .conteudo-slide3 {
+        margin: 10% 0;
+    }
+
+    .conteudo-slide h1 {
+        font-size: 2vh;
+    }
+
+    .conteudo-slide h2 {
+        font-size: 2.6vh;
+    }
+
+    .conteudo-slide p {
+        margin: 0;
+        font-size: 0.7rem;
+        width: 80%;
+        padding-top: 5px;
+    }
+
+    .conteudo-slide2 h1,
+    .conteudo-slide3 h1 {
+        width: 70%;
+    }
+
+    .conteudo-slide2 h2,
+    .conteudo-slide3 h2 {
+        width: 80%;
+    }
+
+    .conteudo-slide .botao {
+        font-size: 1.4vh;
+   
+    }
+
+}

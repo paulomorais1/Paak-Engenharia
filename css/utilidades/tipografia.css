@@ -147,3 +147,13 @@
         font: 600 0.77rem/0.98 "Poppins", sans-serif;    
     }
 }
+
+@media (max-width:399px) and (min-width:325px) {
+    .font-slider-A{
+        font: 600 1.04rem/1.15 "Poppins", sans-serif;
+    }
+    
+    .font-slider-B{
+        font: 600 0.67rem/0.78 "Poppins", sans-serif;    
+    }
+}

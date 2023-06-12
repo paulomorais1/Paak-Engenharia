@@ -2,7 +2,6 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const closeMenu = document.querySelector('.close-menu i');
 const menu = document.querySelector('.menu-h');
 const mainSection = document.querySelector('main');
-// const menuSlide = document.getElementById('menuSlide').style.paddingTop = "50px";
 const body = document.querySelector('body');
 
 hamburgerMenu.addEventListener('click', function() {
@@ -18,9 +17,6 @@ closeMenu.addEventListener('click', function() {
   closeMenu.style.display = 'none';
   mainSection.classList.remove('menu-open');
 });
-
-
-
 
 // Event listener para fechar o menu ao clicar fora dele
 body.addEventListener('click', function(event) {
